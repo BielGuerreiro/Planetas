@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #d86f4e;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.902);
+  overflow-x: hidden;
+}
+
+header {
+  width: 25%;
+  height: 11vh;
+  background-color: var(--main-color);
+  position: fixed;
+  top: -10px;
+  right: -10px;
+  border-radius: 20%;
+  z-index: 10;
+}
+
+.menu {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+}
+
+.menu i {
+  font-size: 40px;
+}
+
+main {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 70vh;
+  border-radius: 0px 10px 180px 180px;
+  position: relative;
+}
+
+.pagina {
+  margin-left: 10px;
+}
+
+.pagina h2 {
+  color: black;
+}
+
+.titulo {
+  position: absolute;
+  left: 15%;
+  top: 8%;
+}
+
+.titulo p {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+
+.titulo h2 {
+  color: black;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.mundo {
+  display: flex;
+  justify-content: center;
+  top: 40%;
+  position: absolute;
+}
+
+.mundo img {
+  width: 70%;
+  height: auto;
+}
+
+.texto {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.texto p {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.texto p span {
+  color: var(--main-color);
+  font-weight: bold;
+}
