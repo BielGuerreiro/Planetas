@@ -85,15 +85,47 @@ main {
 }
 
 .mundo img {
-  width: 75%;
+  width: 80%;
   height: auto;
+}
+
+.rotacao i {
+  font-size: 36px;
+}
+
+.circulos li {
+  font-size: 30px;
+}
+
+.circulo1 {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+}
+
+.circulo2 {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+}
+
+.circulo3 {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+
+.circulo4 {
+  position: absolute;
+  left: 75%;
+  top: 40%;
 }
 
 .expandir {
   position: absolute;
   top: 75%;
   left: 5%;
-  background-color: #0000001e;
+  background-color: #ffffff1e;
 }
 
 .expandir i {
