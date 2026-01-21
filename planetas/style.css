@@ -22,7 +22,7 @@ body {
 header {
   width: 25%;
   height: 11vh;
-  background-color: var(--main-color);
+  background-color: black;
   position: fixed;
   top: -10px;
   right: -10px;
@@ -38,6 +38,7 @@ header {
 
 .menu i {
   font-size: 40px;
+  color: var(--main-color);
 }
 
 main {
@@ -49,17 +50,19 @@ main {
 }
 
 .pagina {
-  margin-left: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .pagina h2 {
   color: black;
+  font-size: 28px;
 }
 
 .titulo {
   position: absolute;
-  left: 15%;
-  top: 8%;
+  left: 10%;
+  top: 10%;
 }
 
 .titulo p {
@@ -71,19 +74,31 @@ main {
 .titulo h2 {
   color: black;
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .mundo {
   display: flex;
   justify-content: center;
-  top: 40%;
+  top: 35%;
   position: absolute;
 }
 
 .mundo img {
-  width: 70%;
+  width: 75%;
   height: auto;
+}
+
+.expandir {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: #0000001e;
+}
+
+.expandir i {
+  color: black;
+  font-size: 50px;
 }
 
 .texto {
@@ -100,4 +115,17 @@ main {
 .texto p span {
   color: var(--main-color);
   font-weight: bold;
+}
+
+.pontos {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.pontos i {
+  color: var(--main-color);
+  font-size: 35px;
+  padding: 10px 30px;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
 }
