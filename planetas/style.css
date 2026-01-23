@@ -12,7 +12,7 @@
 }
 
 body {
-  height: 100vh;
+  height: auto;
   overflow-x: hidden;
   position: relative;
   background-color: rgba(0, 0, 0, 0.902);
@@ -80,13 +80,23 @@ main {
 .mundo {
   display: flex;
   justify-content: center;
-  top: 35%;
+  top: 40%;
+  margin-left: -20px;
   position: absolute;
 }
 
 .mundo img {
-  width: 80%;
+  width: 70%;
   height: auto;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1;
+}
+
+.mundo img.zoom-active {
+  transform: scale(1.3);
+  z-index: 100;
+  margin-left: -10px;
+  margin-top: 10px;
 }
 
 .rotacao i {
@@ -95,6 +105,50 @@ main {
 
 .circulos li {
   font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.info-box {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  width: 160px;
+  font-size: 13px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  bottom: 45px;
+  left: -70px;
+  z-index: 100;
+}
+
+.linha {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: var(--main-color);
+  bottom: -20px;
+  left: 50%;
+}
+
+.info-box.active {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .circulo1 {
@@ -105,14 +159,14 @@ main {
 
 .circulo2 {
   position: absolute;
-  left: 50%;
-  top: 80%;
+  left: 35%;
+  top: 40%;
 }
 
 .circulo3 {
   position: absolute;
-  left: 35%;
-  top: 40%;
+  left: 50%;
+  top: 80%;
 }
 
 .circulo4 {
@@ -126,6 +180,12 @@ main {
   top: 75%;
   left: 5%;
   background-color: #ffffff1e;
+  cursor: pointer;
+  z-index: 102;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .expandir i {

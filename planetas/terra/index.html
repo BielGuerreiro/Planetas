@@ -28,17 +28,53 @@
       </div>
 
       <div class="mundo">
-        <div class="rotacao">
-          <i class="bx bx-rotate-right"></i>
-        </div>
-
+        <div class="rotacao"><i class="bx bx-rotate-right"></i></div>
         <img src="../../img/Terra.png" alt="" />
 
         <div class="circulos">
-          <li class="circulo1"><i class="bx bx-radio-circle-marked"></i></li>
-          <li class="circulo2"><i class="bx bx-radio-circle-marked"></i></li>
-          <li class="circulo3"><i class="bx bx-radio-circle-marked"></i></li>
-          <li class="circulo4"><i class="bx bx-radio-circle-marked"></i></li>
+          <li class="circulo1" onclick="toggleBox(1)">
+            <i class="bx bx-radio-circle-marked"></i>
+            <div class="info-box" id="box-1">
+              <div class="linha"></div>
+              <p>
+                <strong>Norte da África:</strong> Região do Deserto do Saara e
+                países mediterrâneos.
+              </p>
+            </div>
+          </li>
+
+          <li class="circulo2" onclick="toggleBox(2)">
+            <i class="bx bx-radio-circle-marked"></i>
+            <div class="info-box" id="box-2">
+              <div class="linha"></div>
+              <p>
+                <strong>Costa Oeste:</strong> Encontro entre o continente
+                africano e o Oceano Atlântico Sul.
+              </p>
+            </div>
+          </li>
+
+          <li class="circulo3" onclick="toggleBox(3)">
+            <i class="bx bx-radio-circle-marked"></i>
+            <div class="info-box" id="box-3">
+              <div class="linha"></div>
+              <p>
+                <strong>Região Sul:</strong> Grandes formações de nuvens
+                próximas ao Círculo Polar Antártico.
+              </p>
+            </div>
+          </li>
+
+          <li class="circulo4" onclick="toggleBox(4)">
+            <i class="bx bx-radio-circle-marked"></i>
+            <div class="info-box" id="box-4">
+              <div class="linha"></div>
+              <p>
+                <strong>Oceano Índico:</strong> Vastidão oceânica que regula o
+                clima de toda a região leste.
+              </p>
+            </div>
+          </li>
         </div>
       </div>
 
@@ -60,5 +96,7 @@
         <a href=""><i class="bx bx-dots-horizontal-rounded"></i></a>
       </div>
     </section>
+
+    <script src="../script.js"></script>
   </body>
 </html>
